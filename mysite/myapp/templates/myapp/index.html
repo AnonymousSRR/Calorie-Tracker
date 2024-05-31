@@ -3,8 +3,28 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     </head>
     <body>
-      
+    
       <div class = "container">
+            <div class = "container">
+                <div class = "row">
+                    <div class = "col-md-12">
+                        <nav class = "navbar navbar-dark bg-primary">
+                            <span class = "navbar-brand">I-FIT</span>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <br><br><br>
+            <h4>Calorie Goal</h4>
+            <br>
+            <div class = "row">
+                <div class = "col-md-9 offset-1">
+                    <div class = "progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width:0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+            </div>
+            <br><br>
             <div class = "row">
                 <div class = "col-md-12">
                     <form method = "POST">
@@ -37,7 +57,7 @@
                     <th>Carbohydrates (gm)</th>
                     <th>Proteins (gm)</th>
                     <th>Fats (gm)</th>
-                    <th>Calories (kcal)</th>
+                    <th>Calories (Kcal)</th>
                 </tr>
                 
                 {% for c in consumed_food %}
@@ -60,7 +80,15 @@
 
             </table>
          </div>
-         <div clas = "col-md-5 offset-1"></div>
+         <div clas = "col-md-5 offset-1">
+            <div class = "">
+                <h4> Today's Breakdown </h4>
+            </div>
+            <div class = "card-header text-white bg-primary">
+                <h4> Macro Nutrients Breakdown </h4>
+            </div>
+            <div class = "col-md-12"></div>
+         </div>
       </div>
     </body>
 
@@ -84,12 +112,14 @@
         }
         console.log(calories);
 
-        document.getElementById("totalCarbs").innerHTML = carbs;
-        document.getElementById("totalProteins").innerHTML = Proteins;
-        document.getElementById("totalFats").innerHTML = fats;
-        document.getElementById("totalCalories").innerHTML = calories;
+        document.getElementById("totalCarbs").innerHTML = '<b>' + carbs + '(gm) </b>';
+        document.getElementById("totalProteins").innerHTML = '<b>' + Proteins + '(gm) </b>';
+        document.getElementById("totalFats").innerHTML = '<b>' + fats + '(gm) </b>';
+        document.getElementById("totalCalories").innerHTML = '<b>' + calories + '(Kcal) </b>';
 
+        var calper = (calories/2000) * 100;
 
+        document.getElementsByClassName("progress-bar")[0].setAttribute("style", "width:" + calper + "%");
     </script>
 
 </html>
