@@ -22,7 +22,6 @@ This project is a web application for tracking macronutrient intake throughout t
 ## Setup Instructions
 
 1. **Download the ZIP File:**
-    - Go to the [GitHub repository](https://github.com/yourusername/macro-nutrients-tracker).
     - Click on the "Code" button.
     - Select "Download ZIP".
 
