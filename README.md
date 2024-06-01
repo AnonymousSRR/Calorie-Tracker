@@ -21,45 +21,52 @@ This project is a web application for tracking macronutrient intake throughout t
 
 ## Setup Instructions
 
-1. **Clone the Repository:**
+1. **Download the ZIP File:**
+    - Go to the [GitHub repository](https://github.com/yourusername/macro-nutrients-tracker).
+    - Click on the "Code" button.
+    - Select "Download ZIP".
+
+2. **Extract the ZIP File:**
+    - Extract the downloaded ZIP file to your desired location.
+
+3. **Navigate to the Project Directory:**
     ```sh
-    git clone https://github.com/yourusername/macro-nutrients-tracker.git
     cd macro-nutrients-tracker
     ```
 
-2. **Create and Activate Virtual Environment:**
+4. **Create and Activate Virtual Environment:**
     ```sh
     python -m venv venv
     source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
     ```
 
-3. **Install Dependencies:**
+5. **Install Dependencies:**
     ```sh
     pip install django
     ```
 
-4. **Run Migrations:**
+6. **Run Migrations:**
     ```sh
     python manage.py migrate
     ```
 
-5. **Create Superuser:**
+7. **Create Superuser:**
     ```sh
     python manage.py createsuperuser
     ```
 
-6. **Run the Server:**
+8. **Run the Server:**
     ```sh
     python manage.py runserver
     ```
 
-7. **Access the Application:**
+9. **Access the Application:**
     Open your web browser and navigate to `http://127.0.0.1:8000`.
 
 ## Usage
 
-1. **Run the project:**
-    Access the django application
+1. **Login/Register:**
+    Register a new account or login with your credentials.
 
 2. **Add Food Items:**
     Select a food item from the dropdown menu and add it to your daily intake.
