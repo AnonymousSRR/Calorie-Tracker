@@ -1,4 +1,4 @@
-# Macronutrients Tracker
+# I-FIT Macronutrients Tracker
 
 ## Overview
 
