@@ -1,0 +1,7 @@
+mysite/db.sqlite3
+mysite/myapp/__pycache__/models.cpython-311.pyc
+mysite/myapp/__pycache__/views.cpython-311.pyc
+mysite/myapp/migrations/__pycache__/0001_initial.cpython-311.pyc
+mysite/myapp/migrations/__pycache__/0002_consume.cpython-311.pyc
+mysite/myapp/migrations/__pycache__/__init__.cpython-311.pyc
+mysite/mysite/__pycache__/urls.cpython-311.pyc
