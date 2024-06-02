@@ -2,6 +2,8 @@ from django.shortcuts import redirect, render
 from .models import Food, Consume
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.contrib.auth import login, logout
+from django.contrib.auth.decorators import login_required
+
 
 # Create your views here.
 
@@ -25,6 +27,7 @@ def user_login(request):
         form = AuthenticationForm()  
     return render(request, 'myapp/login.html', {'form' : form})
 
+@login_required
 def index(request):
     if request.method == "POST":
         food_consumed = request.POST['food_consumed']
